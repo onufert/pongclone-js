@@ -2,9 +2,12 @@
 *.log
 Thumbs.db
 
+dist/
+!dist/game.min.js
 build/
 node_modules/
 bower_components/
+
 
 !.git*
 !.babelrc
