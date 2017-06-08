@@ -20,7 +20,7 @@ module.exports = function (gulp, $, config) {
 
   // Copy all application assets for distribution.
   gulp.task('copyAssets', () =>
-    gulp.src(files.assets)
+    gulp.src(files.stuff)
       .pipe($.if('**/*.html', $.processhtml()))
       .pipe($.if('**/*.json', $.jsonMinify()))
       .pipe(gulp.dest(dirs.dist)));

@@ -17,7 +17,7 @@ exports.preload = function (game) {
 
   // Initialize physics engines here. Remember that Phaser builds including
   // Arcade Physics have it enabled by default.
-  //game.physics.startSystem(Phaser.Physics.P2);
+  game.physics.startSystem(Phaser.Physics.ARCADE);
 
   // Adjust how many pointers Phaser will check for input events.
   game.input.maxPointers = 2;

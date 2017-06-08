@@ -41,7 +41,7 @@ exports.dirs = {
 // File paths and glob patterns.
 exports.files = {
   // Finds this project static assets to be copied for distribution.
-  assets: `${STATIC}/**`,
+  stuff: `${STATIC}/**`,
 
   // Finds the scripts to be compiled.
   scripts: `${SRC}/**/*.js`,

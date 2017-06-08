@@ -7,11 +7,14 @@
 
 'use strict';
 
+// Import config
+var config = require('./config');
+
 // Import game states.
 var states = require('./states');
 
 exports.init = function () {
-  var game = new Phaser.Game(640, 480, Phaser.AUTO);
+  var game = new Phaser.Game(config.screenWidth, config.screenHeight, Phaser.AUTO, config.gameDiv);
 
   // Dynamically add all required game states.
   Object
